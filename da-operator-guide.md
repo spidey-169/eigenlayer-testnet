@@ -201,14 +201,14 @@ mkdir -p $HOME/.eigenlayer/eigenda/logs
 mkdir -p $HOME/.eigenlayer/eigenda/db
 ```
 
-# Step 3: Operator Networking Security Setup
+# Step 3: Operator Networking Security Setup (Proxmox)
 
 ## Proxmox natting setting:
 
 Since I am using proxmox, Add NODE_RETRIEVAL_PORT (32004) and NODE_DISPERSAL port (32005) to the natting configuration of the host to allow incoming connection to these ports from outside.
 
 ## Setup firewall
-For port 32005m, setup firewall to only allow connections from the following IPs, to prevent excessive node traffic
+For port 32005, setup firewall to only allow connections from the following IPs, to prevent excessive node traffic
 
 ```
 3.221.120.68/32
